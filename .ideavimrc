@@ -1,0 +1,48 @@
+nnoremap <SPACE> <Nop>
+let mapleader = " "
+
+set number relativenumber
+set scrolloff=5
+set incsearch
+set notimeout
+set clipboard+=unnamed
+set ideastrictmode
+set surround
+set ideajoin
+set ideaput
+set ideamarks
+set multiple-cursors
+set NERDTree
+set which-key
+set ReplaceWithRegister
+set argtextobj
+set exchange
+set textobj-entire
+set highlightedyank
+
+nmap <leader>w <Action>(SaveAll)
+nmap <leader>a <Action>(ShowIntentionActions)
+nmap <leader>r <Action>(RenameElement)
+nmap <leader>g <Action>(Generate)
+nmap <leader>c <Action>(CloseContent)
+nmap <leader>d <Action>(ActivateProblemsViewToolWindow)
+nmap <leader>f <Action>(GotoFile)
+nmap <leader>b <Action>(RecentFiles)
+nmap <leader>e <Action>(ActivateProjectToolWindow)
+nmap <leader>o :NERDTreeFocus<CR>
+nmap <leader>s <Action>(FileStructurePopup)
+
+nmap U <Action>($Redo)
+nmap gp <Action>(PreviousTab)
+nmap gn <Action>(NextTab)
+
+noremap x "_x
+
+nmap <c-j> :m .+1<CR>==
+nmap <c-k> :m .-2<CR>==
+vmap <c-j> :m '>+1<CR>gv=gv
+vmap <c-k> :m '<-2<CR>gv=gv
+
+" NERDTree keymaps : open/close a node with l/h
+let g:NERDTreeMapActivateNode="l"
+let g:NERDTreeMapCloseDir="h"
