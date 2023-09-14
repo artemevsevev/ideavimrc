@@ -29,7 +29,6 @@ nmap <leader>d <Action>(ActivateProblemsViewToolWindow)
 nmap <leader>f <Action>(GotoFile)
 nmap <leader>b <Action>(RecentFiles)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
-nmap <leader>o :NERDTreeFocus<CR>
 nmap <leader>s <Action>(FileStructurePopup)
 
 nmap U <Action>($Redo)
@@ -48,6 +47,7 @@ nmap <c-k> :m .-2<CR>==
 vmap <c-j> :m '>+1<CR>gv=gv
 vmap <c-k> :m '<-2<CR>gv=gv
 
-" NERDTree keymaps : open/close a node with l/h
+" NERDTree
+nmap <leader>o :NERDTreeFocus<CR>
 let g:NERDTreeMapActivateNode="l"
 let g:NERDTreeMapCloseDir="h"
