@@ -40,6 +40,8 @@ noremap x "_x
 
 map [f <Action>(MethodUp)
 map ]f <Action>(MethodDown)
+map ]d <Action>(GotoNextError)
+map [d <Action>(GotoPreviousError)
 
 nmap <c-j> :m .+1<CR>==
 nmap <c-k> :m .-2<CR>==
