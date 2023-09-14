@@ -9,10 +9,13 @@ set scrolloff=5
 set incsearch
 set notimeout
 set clipboard+=unnamed
+set clipboard+=ideaput
 set ideastrictmode
 set surround
+set hlsearch
+set showmode
 set ideajoin
-set ideaput
+set idearefactormode=keep
 set ideamarks
 set multiple-cursors
 set NERDTree
@@ -22,6 +25,8 @@ set argtextobj
 set exchange
 set textobj-entire
 set highlightedyank
+set commentary
+set visualbell
 
 nmap <leader>w <Action>(SaveAll)
 nmap <leader>a <Action>(ShowIntentionActions)
@@ -34,9 +39,32 @@ nmap <leader>b <Action>(RecentFiles)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
 nmap <leader>s <Action>(FileStructurePopup)
 
+nmap <c-z> <Action>(ToggleDistractionFreeMode)
+nmap <c-c> <Action>(CommentByLineComment)
+xmap <c-c> <Action>(CommentByLineComment)
+
+nmap <c-w>v <Action>(SplitVertically)
+nmap <c-w>s <Action>(SplitHorizontally)
+nmap <c-w>W <Action>(MoveEditorToOppositeTabGroup)
+
 nmap U <Action>($Redo)
 nmap gp <Action>(PreviousTab)
 nmap gn <Action>(NextTab)
+nmap gr <Action>(FindUsages)
+nmap gi <Action>(GotoImplementation)
+nmap gd <Action>(GotoDeclaration)
+nmap gT <Action>(GotoTest)
+nmap gp <Action>(GotoSuperMethod)
+nmap gy <Action>(GotoTypeDeclaration)
+nmap gh 0
+nmap gs ^
+nmap gl $
+nmap ge G
+
+xmap gh 0
+xmap gs ^
+xmap gl $
+xmap ge G
 
 noremap x "_x
 
@@ -44,6 +72,8 @@ map [f <Action>(MethodUp)
 map ]f <Action>(MethodDown)
 map ]d <Action>(GotoNextError)
 map [d <Action>(GotoPreviousError)
+nmap ]g <Action>(VcsShowNextChangeMarker)
+nmap [g <Action>(VcsShowPrevChangeMarker)
 
 nmap <c-j> :m .+1<CR>==
 nmap <c-k> :m .-2<CR>==
