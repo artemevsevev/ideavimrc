@@ -1,6 +1,9 @@
 nnoremap <SPACE> <Nop>
 let mapleader = " "
 
+inoremap jj <Esc>
+inoremap jk <Esc>
+
 set number relativenumber
 set scrolloff=5
 set incsearch
