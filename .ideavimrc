@@ -54,7 +54,6 @@ nmap gr <Action>(FindUsages)
 nmap gi <Action>(GotoImplementation)
 nmap gd <Action>(GotoDeclaration)
 nmap gT <Action>(GotoTest)
-nmap gp <Action>(GotoSuperMethod)
 nmap gy <Action>(GotoTypeDeclaration)
 nmap gh 0
 nmap gs ^
