@@ -38,6 +38,9 @@ nmap gn <Action>(NextTab)
 
 noremap x "_x
 
+map [f <Action>(MethodUp)
+map ]f <Action>(MethodDown)
+
 nmap <c-j> :m .+1<CR>==
 nmap <c-k> :m .-2<CR>==
 vmap <c-j> :m '>+1<CR>gv=gv
