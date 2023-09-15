@@ -2,7 +2,9 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 inoremap jj <Esc>
+let g:WhichKeyDesc_jj = "jj"
 inoremap jk <Esc>
+let g:WhichKeyDesc_jk = "jk"
 
 set number relativenumber
 set scrolloff=5
@@ -11,7 +13,7 @@ set notimeout
 set clipboard+=unnamed
 set clipboard+=ideaput
 set ideastrictmode
-set surround
+"set surround
 set hlsearch
 set showmode
 set ideajoin
@@ -20,7 +22,7 @@ set ideamarks
 set multiple-cursors
 set NERDTree
 set which-key
-set ReplaceWithRegister
+"set ReplaceWithRegister
 set argtextobj
 set exchange
 set textobj-entire
@@ -38,6 +40,7 @@ nmap <leader>f <Action>(GotoFile)
 nmap <leader>b <Action>(RecentFiles)
 nmap <leader>e <Action>(ActivateProjectToolWindow)
 nmap <leader>s <Action>(FileStructurePopup)
+nmap <leader>k <Action>(QuickJavaDoc)
 
 nmap <c-z> <Action>(ToggleDistractionFreeMode)
 nmap <c-c> <Action>(CommentByLineComment)
@@ -65,7 +68,10 @@ xmap gs ^
 xmap gl $
 xmap ge G
 
+map ms <Action>(SurroundWith)
+
 noremap x "_x
+noremap s "_s
 
 map [f <Action>(MethodUp)
 map ]f <Action>(MethodDown)
@@ -78,6 +84,11 @@ nmap <c-j> :m .+1<CR>==
 nmap <c-k> :m .-2<CR>==
 vmap <c-j> :m '>+1<CR>gv=gv
 vmap <c-k> :m '<-2<CR>gv=gv
+
+map <A-k> <C-w>k
+map <A-j> <C-w>j
+map <A-h> <C-w>h
+map <A-l> <C-w>l
 
 " NERDTree
 nmap <leader>o :NERDTreeFocus<CR>
