@@ -90,6 +90,9 @@ map <A-j> <C-w>j
 map <A-h> <C-w>h
 map <A-l> <C-w>l
 
+map <A-o> <Action>(EditorSelectWord)
+"map <A-i> <Action>(EditorUnSelectWord)
+
 " NERDTree
 nmap <leader>o :NERDTreeFocus<CR>
 let g:NERDTreeMapActivateNode="l"
