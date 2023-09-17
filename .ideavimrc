@@ -28,7 +28,9 @@ set exchange
 set textobj-entire
 set highlightedyank
 set commentary
+
 set visualbell
+set noerrorbells
 
 nmap <leader>w <Action>(SaveAll)
 nmap <leader>a <Action>(ShowIntentionActions)
