@@ -28,6 +28,7 @@ set exchange
 set textobj-entire
 set highlightedyank
 set commentary
+set ignorecase
 
 set visualbell
 set noerrorbells
