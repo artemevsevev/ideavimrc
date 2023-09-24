@@ -48,6 +48,7 @@ nmap <leader>k <Action>(QuickJavaDoc)
 nmap <c-z> <Action>(ToggleDistractionFreeMode)
 nmap <c-c> <Action>(CommentByLineComment)
 xmap <c-c> <Action>(CommentByLineComment)
+nmap <c-p> <Action>(ParameterInfo)
 
 nmap <c-w>v <Action>(SplitVertically)
 nmap <c-w>s <Action>(SplitHorizontally)
