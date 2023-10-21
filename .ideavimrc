@@ -24,7 +24,7 @@ set NERDTree
 set which-key
 "set ReplaceWithRegister
 set argtextobj
-set exchange
+" set exchange     leader c x
 set textobj-entire
 set highlightedyank
 set commentary
@@ -33,11 +33,9 @@ set ignorecase
 set visualbell
 set noerrorbells
 
-nmap <leader>w <Action>(SaveAll)
 nmap <leader>a <Action>(ShowIntentionActions)
 nmap <leader>r <Action>(RenameElement)
 nmap <leader>g <Action>(Generate)
-nmap <leader>c <Action>(CloseContent)
 nmap <leader>d <Action>(ActivateProblemsViewToolWindow)
 nmap <leader>f <Action>(GotoFile)
 nmap <leader>b <Action>(RecentFiles)
@@ -45,6 +43,8 @@ nmap <leader>e <Action>(ActivateProjectToolWindow)
 nmap <leader>s <Action>(FileStructurePopup)
 nmap <leader>k <Action>(QuickJavaDoc)
 
+nmap <c-s> <Action>(SaveAll)
+nmap <c-x> <Action>(CloseContent)
 nmap <c-z> <Action>(ToggleDistractionFreeMode)
 nmap <c-c> <Action>(CommentByLineComment)
 xmap <c-c> <Action>(CommentByLineComment)
