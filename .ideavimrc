@@ -2,6 +2,8 @@ nnoremap <SPACE> <Nop>
 let mapleader = " "
 
 inoremap jj <Esc>
+inoremap <c-c> <Esc>
+
 let g:WhichKeyDesc_jj = "jj"
 inoremap jk <Esc>
 let g:WhichKeyDesc_jk = "jk"
@@ -76,6 +78,9 @@ map ms <Action>(SurroundWith)
 
 noremap x "_x
 noremap s "_s
+xnoremap <a-p> "_dP
+xnoremap <a-d> "_d
+vnoremap <a-d> "_d
 
 map [f <Action>(MethodUp)
 map ]f <Action>(MethodDown)
@@ -88,6 +93,11 @@ nmap <c-j> :m .+1<CR>==
 nmap <c-k> :m .-2<CR>==
 vmap <c-j> :m '>+1<CR>gv=gv
 vmap <c-k> :m '<-2<CR>gv=gv
+
+nmap <c-d> <c-d>zz
+nmap <c-u> <c-u>zz
+nmap n nzzzv
+nmap N Nzzzv
 
 map <A-k> <C-w>k
 map <A-j> <C-w>j
